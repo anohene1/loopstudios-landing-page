@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 740px) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 500px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 360px) {
+    html {
+      font-size: 40%; } }
+
+body {
+  font-family: 'Alata', sans-serif; }
+
+h1, h2 {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif; }
+
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 4rem; }
+
+p {
+  color: #8c8c8c;
+  font-size: 1.5rem; }
+
+.header {
+  height: 60rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  padding: 7rem 12rem; }
+  .header .box {
+    margin-top: 12rem; }
+
+.nav {
+  display: flex;
+  justify-content: space-between; }
+
+.navlist {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  grid-gap: 3rem; }
+  .navlist a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: white; }
+    .navlist a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      margin: 5px auto;
+      background-color: white;
+      transition: width 0.2s; }
+    .navlist a:hover:after {
+      width: 3rem; }
+
+.box {
+  border: 2px solid white;
+  width: 58rem;
+  padding: 3rem;
+  color: white; }
+
+.container {
+  padding: 12rem 12rem; }
+
+.about {
+  position: relative; }
+  .about__desc {
+    width: 50%;
+    background-color: white;
+    padding: 8rem;
+    padding-right: 0;
+    padding-bottom: 0;
+    position: absolute;
+    left: 58rem;
+    margin-left: auto;
+    right: auto;
+    bottom: 0; }
+    .about__desc p {
+      margin-top: 4rem; }

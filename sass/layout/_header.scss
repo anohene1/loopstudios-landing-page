@@ -1,0 +1,10 @@
+.header {
+  height: 60rem;
+  background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  padding: 7rem 12rem;
+
+  .box {
+    margin-top: 12rem;
+  }
+}
