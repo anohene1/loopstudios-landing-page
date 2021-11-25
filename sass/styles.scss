@@ -1,7 +1,12 @@
 @import "base/base";
 @import "utils/variables";
+@import "utils/mixins";
 @import "base/typography";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/footer";
+@import "components/modal-bg";
 @import "components/box";
+@import "components/button";
+@import "components/card";
 @import "pages/homepage";

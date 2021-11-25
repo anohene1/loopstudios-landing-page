@@ -1,6 +1,9 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 5;
 }
 
 .navlist {
@@ -29,5 +32,38 @@
         width: 3rem;
       }
     }
+  }
+
+  @media (max-width: 720px) {
+    display: none;
+  }
+}
+
+.navlist.mobile {
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  top: 25rem;
+  left: 1%;
+
+  a {
+    font-size: 4rem;
+
+    &:hover {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @media (max-width: 720px) {
+    display: block;
+    cursor: pointer;
   }
 }

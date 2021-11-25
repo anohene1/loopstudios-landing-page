@@ -17,9 +17,12 @@ html {
     font-size: 50%;
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 400px) {
     font-size: 40%;
   }
 
+}
 
+body.modal-open {
+  overflow: hidden;
 }

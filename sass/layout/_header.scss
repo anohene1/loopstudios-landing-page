@@ -2,9 +2,18 @@
   height: 60rem;
   background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url("../images/desktop/image-hero.jpg");
   background-size: cover;
-  padding: 7rem 12rem;
+  padding-top: 7rem;
+
+  @media (max-width: 580px) {
+    background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)), url("../images/mobile/image-hero.jpg");
+    height: 90rem;
+  }
 
   .box {
     margin-top: 12rem;
+
+    @media (max-width: 580px) {
+      margin-top: 26rem;
+    }
   }
 }

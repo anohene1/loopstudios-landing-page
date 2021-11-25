@@ -1,0 +1,15 @@
+.btn {
+  border: 2px solid $black;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}

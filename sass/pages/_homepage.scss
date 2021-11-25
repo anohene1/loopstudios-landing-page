@@ -1,24 +1,144 @@
 .container {
-  padding: 12rem 12rem;
+  max-width: 125rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .about {
   position: relative;
+  margin-top: 12rem;
+
+  &__image {
+    @media (max-width: 930px) {
+      width: 50rem;
+    }
+
+    @media (max-width: 630px) {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  }
 
   &__desc {
     width: 50%;
     background-color: $white;
-    padding: 8rem;
+    padding-left: 8rem;
+    padding-top: 8rem;
     padding-right: 0;
     padding-bottom: 0;
     position: absolute;
-    left: 58rem;
+    left: 45%;
     margin-left: auto;
     right: auto;
     bottom: 0;
 
     p {
       margin-top: 4rem;
+    }
+
+    @media (max-width: 930px) {
+      width: 55%;
+      padding-left: 5rem;
+      padding-top: 5rem;
+      //left: 50%;
+      right: 0;
+      bottom: -10rem;
+    }
+
+    @media (max-width: 630px) {
+      position: relative;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+.creations {
+  margin-top: 15rem;
+
+  .see-all {
+    display: none;
+
+    @media (max-width: 580px) {
+      display: inline-block;
+      margin-top: 4rem;
+    }
+  }
+
+  @media (max-width: 630px) {
+    text-align: center;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+
+    @media (max-width: 630px) {
+      display: block;
+    }
+
+    .see-all {
+      @media (max-width: 580px) {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
+
+  .card {
+    &:nth-child(1) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-deep-earth.jpg");
+      background-size: cover;
+
+    }
+
+    &:nth-child(2) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-night-arcade.jpg");
+      background-size: cover;
+    }
+
+    &:nth-child(3) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-soccer-team.jpg");
+      background-size: cover;
+    }
+
+    &:nth-child(4) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-grid.jpg");
+      background-size: cover;
+    }
+
+    &:nth-child(5) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-from-above.jpg");
+      background-size: cover;
+    }
+
+    &:nth-child(6) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-pocket-borealis.jpg");
+      background-size: cover;
+    }
+
+    &:nth-child(7) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-curiosity.jpg");
+      background-size: cover;
+    }
+
+    &:nth-child(8) {
+      background-image: linear-gradient(to bottom, rgba($black, 0.0), rgba($black, 0.5)), url("../images/desktop/image-fisheye.jpg");
+      background-size: cover;
     }
   }
 }
