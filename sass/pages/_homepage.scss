@@ -62,7 +62,7 @@
 .creations {
   margin-top: 15rem;
 
-  .see-all {
+  .see-all.down {
     display: none;
 
     @media (max-width: 580px) {
@@ -85,7 +85,7 @@
       display: block;
     }
 
-    .see-all {
+    .see-all.top {
       @media (max-width: 580px) {
         display: none;
       }
